@@ -1,3 +1,98 @@
-h1 {
-    color: red;
+hr {
+  margin: 3rem 0;
+}
+
+// selecteur1
+#bloc {
+  background-color: yellow;
+
+  & > b {
+    color: green;
+  }
+
+  p {
+    color: blue;
+
+    b:last-child {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .p2 {
+    color: orange;
+
+    input:first-child {
+      background-color: green;
+    }
+  }
+}
+
+h1:first-child,
+h2 {
+  color: red;
+}
+
+a:first-child {
+  color: gray;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// selecteur2
+dl dt:not(.la_class) {
+  background-color: #ffcccc;
+}
+dl dd:not(#mon_id) {
+  background-color: #cdffcd;
+}
+
+// selecteur3
+
+em:last-child {
+  background-color: #cdfecc;
+  font-style: italic;
+}
+
+p {
+  q {
+    background-color: #cdfecc;
+  }
+  .ma_classe ~ q {
+    background-color: #ffcdcd;
+  }
+}
+
+// selecteur table
+
+h1:last-child {
+  text-align: center;
+}
+
+table {
+  width: 30rem;
+  border-collapse: collapse;
+  border: solid red 2px;
+
+  caption {
+    color: #cdffcd;
+  }
+
+  tr {
+    th {
+      color: #fff;
+      background-color: #000;
+    }
+
+    td {
+      background-color: #cdffcd;
+    }
+
+    th,
+    td {
+      border: solid 1px;
+    }
+  }
 }
