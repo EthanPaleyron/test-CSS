@@ -6,6 +6,7 @@
 
 body {
   margin-bottom: 5rem;
+  counter-reset: i;
 }
 
 hr {
@@ -249,7 +250,7 @@ main {
 .ex10 {
   cursor: pointer;
   &:hover {
-    width: 200rem;
+    width: 60rem;
   }
 }
 
@@ -320,18 +321,56 @@ main {
       display: none;
       top: 17rem;
       left: 5rem;
+
+      &:hover {
+        display: block;
+      }
     }
 
     .point2-explication {
       display: none;
       top: 11rem;
       left: 14rem;
+
+      &:hover {
+        display: block;
+      }
     }
 
     .point3-explication {
       display: none;
       top: 13rem;
       left: 21rem;
+
+      &:hover {
+        display: block;
+      }
+    }
+  }
+}
+
+.listI {
+  li {
+    &::before {
+      counter-increment: i;
+      content: "Illustration " + counter(i, upper-roman) + " : ";
+    }
+  }
+}
+
+.imgs {
+  display: flex;
+  gap: 1rem;
+  a img {
+    width: 15rem;
+    height: 15rem;
+    border: solid 0.5rem #000;
+  }
+
+  #img1 {
+    display: none;
+    &:target {
+      display: block;
     }
   }
 }
