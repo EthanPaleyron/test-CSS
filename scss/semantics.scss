@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+body {
+  margin-bottom: 5rem;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+header,
+nav,
+aside,
+footer {
+  border: solid;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  height: 90vh;
+  aside {
+    width: 15rem;
+    height: 100%;
+  }
+
+  .aside1 {
+    float: left;
+  }
+
+  .aside2 {
+    float: right;
+  }
+}

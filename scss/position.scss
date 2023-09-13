@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+body {
+  margin-bottom: 5rem;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+.ex4 {
+  width: 20%;
+  background-color: greenyellow;
+  padding: 0.5rem;
+
+  div {
+    width: 5rem;
+    float: right;
+    background-color: yellow;
+  }
+}
+
+.ex5 {
+  position: relative;
+  width: 25%;
+  background-color: #457fba;
+  padding: 1rem;
+
+  div {
+    padding: 1rem;
+    margin-right: 7rem;
+    background-color: white;
+  }
+  ul {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    line-height: 1.5rem;
+    width: fit-content;
+    padding: 1rem;
+    background-color: #cce5ff;
+  }
+}
+
+.ex6 {
+  width: 25%;
+  background-color: greenyellow;
+  overflow: auto;
+  padding-bottom: 1rem;
+
+  p {
+    padding: 1rem;
+  }
+
+  div {
+    float: right;
+    width: 9rem;
+    background-color: yellow;
+  }
+}
+
+.ex7 {
+  position: relative;
+  width: 25%;
+  background-color: greenyellow;
+  padding: 1rem;
+
+  div {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    background-color: yellow;
+  }
+}
+
+.ex8 {
+  width: 30%;
+  background-color: #457fba;
+  padding: 1rem;
+
+  ul {
+    width: 100%;
+    padding: 0.2rem 0;
+    background-color: #ffe4cc;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  div {
+    margin: 0 auto;
+    width: 95%;
+    background-color: #fff;
+    padding: 1rem;
+  }
+}
+
+.ex9 {
+  width: fit-content;
+  padding: 0.5rem;
+  border: dashed;
+
+  p a::after {
+    content: url("../public/puce.png");
+    margin: 0 0.4rem;
+  }
+}

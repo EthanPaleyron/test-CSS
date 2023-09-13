@@ -1,0 +1,37 @@
+* {
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+body {
+  margin-bottom: 5rem;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+.puce {
+  li {
+    list-style-image: url("../public/puce.png");
+  }
+}
+
+.globe {
+  li {
+    list-style: url("../public/globe.jpeg");
+    &::after {
+      content: "exemple";
+    }
+  }
+}
