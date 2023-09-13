@@ -52,10 +52,10 @@ a:first-child {
 }
 
 // selecteur2
-dl dt:not(.la_class) {
+.dl dt:not(.la_class) {
   background-color: #ffcccc;
 }
-dl dd:not(#mon_id) {
+.dl dd:not(#mon_id) {
   background-color: #cdffcd;
 }
 
@@ -249,7 +249,89 @@ main {
 .ex10 {
   cursor: pointer;
   &:hover {
-    transition: 10s ease-out;
     width: 200rem;
+  }
+}
+
+.map {
+  position: relative;
+
+  h1,
+  h2 {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    color: #fff;
+    background-color: #000;
+    padding: 0.2rem 0.5rem;
+  }
+
+  h2 {
+    top: 4rem;
+  }
+
+  .points {
+    dt {
+      position: absolute;
+      background-color: #fff;
+      padding: 0.3rem 0.6rem;
+      font-weight: bold;
+    }
+
+    dd {
+      position: absolute;
+      color: #fff;
+      background-color: #000000ae;
+      padding: 0.5rem 2rem;
+      border: solid 1px #000;
+      a {
+        color: #fff;
+      }
+    }
+
+    .point1 {
+      top: 17rem;
+      left: 5rem;
+
+      &:hover + .point1-explication {
+        display: block;
+      }
+    }
+
+    .point2 {
+      top: 11rem;
+      left: 14rem;
+
+      &:hover + .point2-explication {
+        display: block;
+      }
+    }
+
+    .point3 {
+      top: 13rem;
+      left: 21rem;
+
+      &:hover + .point3-explication {
+        display: block;
+      }
+    }
+
+    .point1-explication {
+      display: none;
+      top: 17rem;
+      left: 5rem;
+    }
+
+    .point2-explication {
+      display: none;
+      top: 11rem;
+      left: 14rem;
+    }
+
+    .point3-explication {
+      display: none;
+      top: 13rem;
+      left: 21rem;
+    }
   }
 }
