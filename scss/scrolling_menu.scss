@@ -27,10 +27,14 @@ hr {
   margin: 3rem 0;
 }
 
-ul {
+.menus {
   width: fit-content;
-  .menus {
-    a {
+  li:first-child {
+    background-color: rgb(42, 35, 52);
+    height: 15vh;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    a:first-child {
       width: 100%;
       color: #fff;
       font-size: 1.5rem;
@@ -40,27 +44,19 @@ ul {
         rgba(42, 35, 52, 1) 0%,
         rgba(101, 83, 120, 1) 100%
       );
-      padding: auto;
+      // padding: 1rem 3rem;
       border-top-right-radius: 1rem;
       border-top-left-radius: 1rem;
     }
 
-    &:hover ul .menu_purple {
+    &:hover ul li a {
       display: block;
     }
   }
 
-  ul .menu_purple {
+  .menu_purple li a {
     display: none;
     color: #fff;
     font-size: 1.5rem;
-    width: 100%;
-    background-color: rgb(42, 35, 52);
-    padding: 1rem 3rem;
-
-    &:last-child {
-      border-bottom-right-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-    }
   }
 }

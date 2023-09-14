@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+body {
+  margin-top: 3rem;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    display: block;
+    width: 17rem;
+    background-color: #fff;
+    padding: 0.7rem;
+    border: solid 0.1px;
+    box-shadow: 2px 2px 15px 0px #000000;
+
+    p {
+      margin: 1rem;
+    }
+
+    &:first-child {
+      z-index: 1;
+      transform: rotate(4deg);
+    }
+
+    &:last-child {
+      z-index: 50;
+      transform: rotate(-5deg);
+    }
+  }
+}
