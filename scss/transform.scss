@@ -21,8 +21,7 @@ div {
     width: 17rem;
     background-color: #fff;
     padding: 0.7rem;
-    border: solid 0.1px;
-    box-shadow: 2px 2px 15px 0px #000000;
+    box-shadow: 1px 1px 10px 0px grey;
 
     p {
       margin: 1rem;
@@ -30,12 +29,12 @@ div {
 
     &:first-child {
       z-index: 1;
-      transform: rotate(4deg);
+      transform: rotate(7deg);
     }
 
     &:last-child {
       z-index: 50;
-      transform: rotate(-5deg);
+      transform: rotate(-6deg);
     }
   }
 }
