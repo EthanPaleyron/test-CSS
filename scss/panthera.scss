@@ -10,7 +10,7 @@ img {
 }
 
 a {
-  text-decoration: none;
+  color: #000;
   cursor: pointer;
 }
 
@@ -19,7 +19,12 @@ ol {
   list-style: none;
 }
 
+input {
+  display: none;
+}
+
 header {
+  margin-bottom: 2rem;
   color: #818080;
   padding: 1rem 0 1.5rem;
   box-shadow: 0px 0px 10px 0px grey;
@@ -32,12 +37,101 @@ header {
 }
 
 nav ul {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 0 1rem;
 
   li a {
     color: #fff;
     background-color: #818080;
+  }
+}
+
+.text_famille {
+  text-align: center;
+  color: #818080;
+}
+
+.lire_la_suite {
+  margin: 2rem 0;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background-color: #c1c1c0;
+  padding: 0.2rem;
+}
+
+.text_two {
+  display: none;
+}
+
+.checkbox:checked ~ .text_two {
+  display: block;
+}
+
+article {
+  h2 {
+    color: #808080;
+    width: 100%;
+    padding: 0 1rem;
+    font-style: italic;
+    border-bottom: dashed 0.4rem #808080;
+  }
+  div {
+    width: 96%;
+    padding: 1rem;
+    p {
+      margin-top: 1rem;
+      color: #808080;
+    }
+  }
+}
+
+.tigre,
+.lion,
+.leopard,
+.pdn,
+.jaguar {
+  display: none;
+}
+
+.radio_tigre:checked ~ .tigre {
+  display: block;
+}
+
+.radio_lion:checked ~ .lion {
+  display: block;
+}
+
+.radio_leopard:checked ~ .leopard {
+  display: block;
+}
+
+.radio_pdn:checked ~ .pdn {
+  display: block;
+}
+
+.radio_jaguar:checked ~ .jaguar {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  nav ul {
+    display: flex;
+  }
+  .tigre,
+  .lion,
+  .leopard,
+  .pdn,
+  .jaguar {
+    display: block;
+  }
+
+  .lire_la_suite {
+    display: none;
+  }
+
+  .text_two {
+    display: block;
   }
 }
