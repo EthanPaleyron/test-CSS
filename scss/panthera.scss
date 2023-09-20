@@ -36,42 +36,59 @@ header {
   }
 }
 
-nav ul {
-  display: none;
-  flex-wrap: wrap;
-  gap: 0 1rem;
+nav {
+  display: flex;
+  justify-content: center;
+  ul {
+    display: none;
+    flex-wrap: wrap;
+    gap: 0 1rem;
 
-  li a {
-    color: #fff;
-    background-color: #818080;
+    li a {
+      color: #fff;
+      text-decoration: none;
+      font-style: italic;
+      background-color: #818080;
+    }
   }
 }
 
-.text_famille {
-  text-align: center;
-  color: #818080;
-}
+.section_text_famille {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.lire_la_suite {
-  margin: 2rem 0;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  background-color: #c1c1c0;
-  padding: 0.2rem;
-}
+  .text_famille {
+    font-style: italic;
+    text-align: center;
+    color: #818080;
+  }
 
-.text_two {
-  display: none;
-}
+  .lire_la_suite {
+    margin: 1rem 0;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background-color: #c1c1c0;
+    padding: 0.2rem;
+  }
 
-.checkbox:checked ~ .text_two {
-  display: block;
+  .text_two {
+    display: none;
+  }
+
+  .checkbox:checked ~ .text_two {
+    display: block;
+  }
 }
 
 article {
   h2 {
     color: #808080;
+    font-weight: bold;
     width: 100%;
     padding: 0 1rem;
     font-style: italic;
@@ -115,7 +132,24 @@ article {
   display: block;
 }
 
-@media screen and (min-width: 600px) {
+footer ul {
+  margin-top: 1rem;
+  background-color: #808080;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  li a {
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+@media screen and (min-width: 800px) {
   nav ul {
     display: flex;
   }
@@ -132,6 +166,19 @@ article {
   }
 
   .text_two {
-    display: block;
+    display: block !important;
+  }
+
+  @media screen and (min-width: 1200px) {
+    nav {
+      margin: 0 0 2rem;
+      ul {
+        gap: 0;
+        li a {
+          padding: 0.5rem 3rem;
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }
