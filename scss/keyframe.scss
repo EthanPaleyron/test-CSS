@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+
+  .circle_animation {
+    margin-top: 10rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: blueviolet;
+    border: solid;
+    border-radius: 50%;
+    animation-name: rainbow;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes rainbow {
+  14% {
+    background-color: blueviolet;
+  }
+  30% {
+    background-color: blue;
+  }
+  45% {
+    background-color: greenyellow;
+  }
+  60% {
+    background-color: yellow;
+  }
+  77% {
+    background-color: orange;
+  }
+  95% {
+    background-color: red;
+  }
+  100% {
+    background-color: blueviolet;
+  }
+}
